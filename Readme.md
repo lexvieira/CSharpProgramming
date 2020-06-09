@@ -17,34 +17,34 @@ git status -s
 
 git diff\
 git diff --staged\
-git diff --cached\
+git diff --cached
 
-git commit (without parameters, open a editor to write a commit message)
+git commit (without parameters, open a editor to write a commit message)\
 git commit -m "First Commit"
 
 git rm --cached README
 
-git rm log/\*.log
+git rm log/\*.log\
 Note the backslash (\) in front of the *. This is necessary because Git does its own filename expansion in addition to your shell’s filename expansion. This command removes all files that have the .log extension in the log/ directory. Or, you can do something like this:
 
-git rm \*~
+git rm \*~\
 This command removes all files whose names end with a ~.
 
-* RENAME FILES AND ADD TO STAGE
-git mv README.md README
-OR
-mv README.md README
-git rm README.md
+* RENAME FILES AND ADD TO STAGE\
+git mv README.md README\
+OR\
+mv README.md README\
+git rm README.md\
 git add README
 
-* COMMIT HISTORY (LOG)
-https://git-scm.com/book/en/v2/Git-Basics-Viewing-the-Commit-History
-git log
-git log --stat
-git log --since=2.weeks
-git log -S "git rm"
-git log -S function_name
-git log --pretty="%h - %s" --author='Junio C Hamano' --since="2008-10-01" \
+* COMMIT HISTORY (LOG)\
+https://git-scm.com/book/en/v2/Git-Basics-Viewing-the-Commit-History\
+git log\
+git log --stat\
+git log --since=2.weeks\
+git log -S "git rm"\
+git log -S function_name\
+git log --pretty="%h - %s" --author='Junio C Hamano' --since="2008-10-01" 
    --before="2008-11-01" --no-merges -- t/
 
 * UNDOING (https://git-scm.com/book/en/v2/Git-Basics-Undoing-Things)
@@ -52,40 +52,40 @@ git log --pretty="%h - %s" --author='Junio C Hamano' --since="2008-10-01" \
 * Undo in Branches (https://git-scm.com/book/en/v2/Git-Branching-Branches-in-a-Nutshell#ch03-git-branching)
 * Data Recovery (https://git-scm.com/book/en/v2/Git-Internals-Maintenance-and-Data-Recovery#_data_recovery)
 
-$ git commit -m 'Initial commit'
-$ git add forgotten_file
+$ git commit -m 'Initial commit'\
+$ git add forgotten_file\
 $ git commit --amend
 
-TAGGING
-$ git tag -a v0.1 -m "First version project"
-$ git tag
+* TAGGING\
+$ git tag -a v0.1 -m "First version project"\
+$ git tag\
 
-* Unstaging a Staged File
+* Unstaging a Staged File\
   git reset HEAD Readme.md
 
-* Undo Last Commit (https://devconnected.com/how-to-undo-last-git-commit/#:~:text=The%20easiest%20way%20to%20undo,removed%20from%20your%20Git%20history.)
+* Undo Last Commit (https://devconnected.com/how-to-undo-last-git-commit/#:~:text=The%20easiest%20way%20to%20undo,removed%20from%20your%20Git%20history.)\
 git reset --soft HEAD~1
 
-* Working with Remotes (https://git-scm.com/book/en/v2/Git-Basics-Working-with-Remotes)
-  * Show Remote Name
-   git remote
-  * Show Remote Url
+* Working with Remotes (https://git-scm.com/book/en/v2/Git-Basics-Working-with-Remotes)\
+  * Show Remote Name\
+   git remote\
+  * Show Remote Url\
     git remote -v
 
-* Add Remote Repositories
+* Add Remote Repositories\
   git remote add <shortname> <url>
 
-* Fetching and Pulling from Your Remotes
+* Fetching and Pulling from Your Remotes\
   git fetch <remote name>
 
-* Pushing to Your Remotes
-  git push <remote> <branch>
-  git push <origin if is cloned> <master>
+* Pushing to Your Remotes\
+  git push <remote> <branch>\
+  git push <origin if is cloned> <master>\
   git push origin master
 
-* Inspecting a Remote
-  git remote show origin
-  git remote show CSharpProgramming
+* Inspecting a Remote\
+  git remote show origin\
+  git remote show CSharpProgramming\
 
-* Renaming and Removing Remotes
-  git remote rename CSharpProgramming CSharpProgWithGit
+* Renaming and Removing Remotes\
+  git remote rename CSharpProgramming CSharpProgWithGit\
