@@ -9,15 +9,15 @@ Help Online: https://freenode.net/ (Channels #git or #github)
 https://www.git-tower.com/learn/git/faq/undo-last-commit
 
 
-git add *
+git add *\
 git rm * -f (force to remove)
 
-git status
+git status\
 git status -s
 
-git diff
-git diff --staged
-git diff --cached
+git diff\
+git diff --staged\
+git diff --cached\
 
 git commit (without parameters, open a editor to write a commit message)
 git commit -m "First Commit"
