@@ -65,3 +65,27 @@ $ git tag
 
 * Undo Last Commit (https://devconnected.com/how-to-undo-last-git-commit/#:~:text=The%20easiest%20way%20to%20undo,removed%20from%20your%20Git%20history.)
 git reset --soft HEAD~1
+
+* Working with Remotes (https://git-scm.com/book/en/v2/Git-Basics-Working-with-Remotes)
+  * Show Remote Name
+   git remote
+  * Show Remote Url
+    git remote -v
+
+* Add Remote Repositories
+  git remote add <shortname> <url>
+
+* Fetching and Pulling from Your Remotes
+  git fetch <remote name>
+
+* Pushing to Your Remotes
+  git push <remote> <branch>
+  git push <origin if is cloned> <master>
+  git push origin master
+
+* Inspecting a Remote
+  git remote show origin
+  git remote show CSharpProgramming
+
+* Renaming and Removing Remotes
+  git remote rename CSharpProgramming CSharpProgWithGit
