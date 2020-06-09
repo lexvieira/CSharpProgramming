@@ -51,7 +51,6 @@ git log --pretty="%h - %s" --author='Junio C Hamano' --since="2008-10-01"
 * See More in (https://git-scm.com/book/en/v2/Git-Tools-Reset-Demystified#_git_reset)
 * Undo in Branches (https://git-scm.com/book/en/v2/Git-Branching-Branches-in-a-Nutshell#ch03-git-branching)
 * Data Recovery (https://git-scm.com/book/en/v2/Git-Internals-Maintenance-and-Data-Recovery#_data_recovery)
-
 $ git commit -m 'Initial commit'\
 $ git add forgotten_file\
 $ git commit --amend
