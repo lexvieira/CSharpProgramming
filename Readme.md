@@ -60,3 +60,8 @@ TAGGING
 $ git tag -a v0.1 -m "First version project"
 $ git tag
 
+* Unstaging a Staged File
+  git reset HEAD Readme.md
+
+* Undo Last Commit (https://devconnected.com/how-to-undo-last-git-commit/#:~:text=The%20easiest%20way%20to%20undo,removed%20from%20your%20Git%20history.)
+git reset --soft HEAD~1
